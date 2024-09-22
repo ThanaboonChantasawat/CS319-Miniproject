@@ -1,0 +1,200 @@
+body{
+  overflow-x: hidden;
+}
+
+/* Navbar */
+
+.navbar-toggler{
+    border: none;
+
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.btn.nav-link{
+    font-weight: bold;
+}
+
+/* ทำให้ menubar อยู่ใต้ navbar พอดี เพราะใช้ sticky*/
+#menubar {
+  top: 85px; 
+}
+
+/* effect btn */
+.btn{
+  transition: all 0.5s;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+.no-scale {
+  transition: none;
+}
+
+.no-scale:hover {
+  transform: none;
+}
+
+.nav-link{
+    color: white;
+    font-weight: bold;
+    position: relative;
+    font-size: larger;
+}
+
+/* start effect เส้นใต้ข้อความ */
+.underline-effect::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.underline-effect:hover::before {
+    width: 90%;
+    visibility: visible;
+}
+
+/* หน้าที่เลือก
+.underline-effect.selected::before{
+  width: 90%;
+  visibility: visible;
+} */
+
+/* end effect เส้นใต้ข้อความ */
+
+/* สี carousel-indicators*/
+.carousel .carousel-indicators button {
+    background-color: black;
+}
+
+.carousel .carousel-indicators button.active {
+    background-color: orange;
+}
+
+/* Start Heroes */
+.hero-section{
+    padding: 100px 0;
+}
+
+.hero-section h1{
+    color: rgb(255, 246, 235);
+ }
+
+.hero-section h2{
+   color: orangered;
+}
+
+.hero-section h3{
+   color: rgb(255, 246, 235);
+}
+
+  
+/* End Heroes */
+
+
+@media (max-width: 2560px) {
+  h1.display-1, h2.display-1 {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1.display-1, h2.display-1 {
+    font-size: 4rem;
+  }
+  h3.display-5 {
+    font-size: 2.5rem;
+  }
+
+  label.h5{
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 426px) {
+  h1.display-1, h2.display-1 {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    width: 290px;
+    height: 350px;
+  }
+
+  .cardimg {
+    width: 290px;
+    height: 310px;
+  }
+
+  .heroesimg{
+    width: 50px;
+    height: 50px;
+  }
+
+  .btn-custom {
+    align-self: center;
+    padding: 3px;
+    width: 70%;
+    font-size: medium;
+  }
+}
+
+@media (max-width: 320px) {
+  h1.display-1, h2.display-1 {
+    font-size: 2rem;
+  }
+
+  p{
+    font-size: 0.8rem;
+  }
+
+  .card {
+    width: 250px;
+    height: 290px;
+  }
+
+  .cardimg {
+    width: 250px;
+    height: 250px;
+  }
+
+  .col-auto{
+    padding: 0;
+  }
+
+  .nav-link{
+    font-size: 0.8rem;
+  }
+
+  .btn-custom {
+    align-self: center;
+    padding: 3px;
+    width: 70%;
+    font-size: small;
+  }
+}
+
+/* Card effect */
+
+.card {
+  transition: all 0.3s;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- BS5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      height: 100vh;
+      background: linear-gradient(to bottom,
+          black 60%,
+          orangered 0%,
+          orangered 100%);
+    }
+
+    form {
+      background-color: rgb(254, 248, 231);
+      width: 100%;
+    }
+
+    @media (min-width: 1440px) {
+      form {
+        width: 70%;
+      }
+    }
+
+    .page-link:hover {
+      color: orangered;
+    }
+  </style>
+</head>
+
+<body style="background-color: #E0E0E0;">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9cc7c00650.js" crossorigin="anonymous"></script>
+  <!-- BS5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Start Nav Bar -->
+  <nav class="navbar navbar-dark bg-black p-4 vw-100 position-sticky top-0 z-3">
+    <div class="container d-flex justify-content-between">
+      <button class="navbar-toggler d-block" data-bs-toggle="collapse" data-bs-target="#menubar">
+        <i class="fa-sharp fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+      </button>
+
+      <!-- logo -->
+      <div class="col-4 col-md-2 col-lg-1">
+        <a href="index.html"><img class="w-100" src="https://openhouse.bu.ac.th/_nuxt/logo_bu.B5Fc9ReW.png"></a>
+      </div>
+
+      <!-- ปุ่ม -->
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-light btn-sm rounded-5 border-2 no-scale">
+          <a href="#" class="nav-link">เข้าสู่ระบบ</a></button>
+        <!-- <button class="btn btn-outline-light btn-sm rounded-5 border-2">English</button> -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu -->
+  <div class="collapse position-sticky z-3" id="menubar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container">
+        <ul class="navbar-nav flex-wrap flex-row gap-5">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link selected underline-effect">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#hightlight" class="nav-link underline-effect">Highlight</a>
+          </li>
+          <li class="nav-item">
+            <a href="activies.html" class="nav-link underline-effect">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link underline-effect">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="faq.html" class="nav-link underline-effect">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- End Nav Bar -->
+
+  <!-- Start Login From -->
+  <div class="container d-flex flex-column text-black align-items-center justify-content-center"
+    style="height: 90vh; width: 100%;">
+    <h1 class="display-1 fw-bold text-light text-center">BU OPEN HOUSE 2024</h1>
+    <form class="p-5 pb-2 pt-3 mt-5 rounded-4">
+      <div class="container d-flex justify-content-center">
+        <h1 class="display-3 fw-bold text-black text-center">Login</h1>
+      </div>
+      <div class="mb-3">
+        <label for="loginemail" class="form-label h5  fw-bolder">E-mail<span class="text-danger  fw-bolder">
+            *</span></label>
+        <input type="email" class="form-control bg-transparent border-1 border-black " id="loginemail"
+          aria-describedby="emailHelp" required>
+      </div>
+      <div class="mb-3">
+        <label for="loginpassword" class="form-label h5  fw-bolder">รหัสผ่าน (เบอร์โทรศัพท์)<span
+            class="text-danger  fw-bolder"> *</span></label>
+        <input type="password" class="form-control bg-transparent border-1 border-black" id="loginpassword" required>
+      </div>
+      <div class="container d-flex justify-content-between">
+        <div class="form-check">
+          <input class="form-check-input border-1 border-black" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label fw-bolder" for="flexCheckDefault">
+            ให้ฉันอยู่ในระบบต่อไป
+          </label>
+        </div>
+        <a href="#" class="page-link fw-bolder">ลืมรหัสผ่าน</a>
+      </div>
+      <div class="container d-flex justify-content-center">
+        <button type="submit" class="btn text-light rounded-4 btn-lg py-1"
+          style="background-color: orangered;">เข้าสู่ระบบ</button>
+      </div>
+      <div class="container d-flex justify-content-center mt-4">
+        <p class="me-2 fw-bolder">ยังไม่มีบัญชี?</p>
+        <a href="registration.html" class="page-link fw-bolder under">คลิกตรงนี้</a>
+      </div>
+    </form>
+    <img src="https://openhouse.bu.ac.th/_nuxt/logo_bu_benzilla.Dc9OhMsC.svg" height="150" class="mt-5">
+  </div>
+  <!-- End Login Form -->
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- BS5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .card {
+      width: 350px;
+      height: 350x;
+    }
+
+    .cardimg {
+      width: 350px;
+      height: 350px;
+    }
+
+    .btn-quiz {
+      border-color: #002fff;
+    }
+
+    @media (max-width: 426px) {
+
+      .card {
+        width: 250px;
+        height: 290px;
+      }
+
+      .cardimg {
+        width: 250px;
+        height: 250px;
+      }
+
+      .chevron {
+        font-size: 3rem !important;
+      }      
+    }
+
+    .text-custom {
+      background: linear-gradient(to right, #FF79E1 0%, #8B00DB 10%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9cc7c00650.js" crossorigin="anonymous"></script>
+  <!-- BS5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Start Nav Bar -->
+  <nav class="navbar navbar-dark bg-black p-4 vw-100 position-sticky top-0 z-3">
+    <div class="container d-flex justify-content-between">
+      <button class="navbar-toggler d-block" data-bs-toggle="collapse" data-bs-target="#menubar">
+        <i class="fa-sharp fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+      </button>
+
+      <!-- logo -->
+      <div class="col-4 col-md-2 col-lg-1">
+        <a href="#"><img class="w-100" src="https://openhouse.bu.ac.th/_nuxt/logo_bu.B5Fc9ReW.png"></a>
+      </div>
+
+      <!-- ปุ่ม -->
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-light btn-sm rounded-5 border-2 no-scale ">
+          <a href="login.html" class="nav-link">เข้าสู่ระบบ</a></button>
+        <!-- <button class="btn btn-outline-light btn-sm rounded-5 border-2">English</button> -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu -->
+  <div class="collapse position-sticky z-3" id="menubar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container">
+        <ul class="navbar-nav flex-wrap flex-row gap-5">
+          <li class="nav-item">
+            <a href="#" class="nav-link selected underline-effect">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#hightlight" class="nav-link underline-effect">Highlight</a>
+          </li>
+          <li class="nav-item">
+            <a href="activies.html" class="nav-link underline-effect">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link underline-effect">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="faq.html" class="nav-link underline-effect">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- End Nav Bar -->
+
+
+
+  <!-- Start Slider -->
+  <div id="slider" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="https://openhouse.bu.ac.th/contents/banner/banner_2.jpg?4" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="https://openhouse.bu.ac.th/contents/banner/banner_3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+      <i class="fa-solid fa-chevron-left chevron" style="color: #000000; font-size: 5rem;"></i>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+      <i class="fa-solid fa-chevron-right chevron" style="color: #000000; font-size: 5rem;"></i>
+    </button>
+  </div>
+  <!-- End Slider -->
+
+  <!-- Start Heroes -->
+  <section class="hero-section text-white bg-black">
+    <div class="container text-center">
+      <h1 class="display-1 fw-bold">LET'S PLAY</h1>
+      <div class="d-flex flex-row align-items-center justify-content-center">
+        <img class="heroesimg" src="https://openhouse.bu.ac.th/_nuxt/mascot_camera.BY9lPYQC.svg" height="100" class="mb-3 mb-md-0">
+        <h2 class="display-1 fw-bold ms-md-3">LIKE A PRO</h2>
+      </div>
+      <h3 class="display-1 fw-bold mt-3">มาลองจนกว่าจะมั่นใจ</h3>
+
+      <!-- Buttons -->
+      <div class="d-flex flex-sm-row flex-column justify-content-center gap-3 mt-5" id="hightlight">
+        <button class="btn btn-outline-light btn-lg rounded-5 border-4 btn-custom">ปิดลงทะเบียน</button>
+        <button
+          class="btn btn-quiz text-white btn-lg rounded-5 border-4 bg-primary btn-custom">เล่นเพื่อค้นหาความโปรในตัวคุณ</button>
+      </div>
+    </div>
+  </section>
+  <!-- End Heroes -->
+
+  <!-- Start Highlight Card -->
+
+  <div class="container-fluid p-5" style="background-color: antiquewhite;">
+    <div class="container"></div>
+    <h1 class="display-1 fw-bold mb-5 text-uppercase text-custom">Highlight</h1>
+    <div class="row justify-content-center">
+
+      <!-- Card 1 -->
+      <div class="col-auto">
+        <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg mb-4">
+          <div class="d-flex flex-column h-100">
+            <ul class="list-unstyled mb-0">
+              <li class="me-auto">
+                <img class="cardimg" src="https://openhouse.bu.ac.th/contents/highlights/1.jpg?2">
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary rounded-0 btn-dark" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              อ่านเพิ่มเติม </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-auto">
+        <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg mb-4">
+          <div class="d-flex flex-column">
+            <ul class="list-unstyled mb-0">
+              <li class="m-auto">
+                <img class="cardimg" src="https://openhouse.bu.ac.th/contents/highlights/2.jpg?1">
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary rounded-0 btn-dark" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              อ่านเพิ่มเติม </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-auto">
+        <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg mb-4">
+          <div class="d-flex flex-column h-100">
+            <ul class="list-unstyled mb-0">
+              <li class="me-auto">
+                <img class="cardimg" src="https://openhouse.bu.ac.th/contents/highlights/3.jpg?1">
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary rounded-0 btn-dark" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              อ่านเพิ่มเติม </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-auto">
+        <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg mb-4">
+          <div class="d-flex flex-column h-100">
+            <ul class="list-unstyled mb-0">
+              <li class="me-auto">
+                <img class="cardimg" src="https://openhouse.bu.ac.th/contents/highlights/6.jpg?1">
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary rounded-0 btn-dark" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              อ่านเพิ่มเติม </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-auto">
+        <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg mb-4">
+          <div class="d-flex flex-column h-100">
+            <ul class="list-unstyled mb-0">
+              <li class="me-auto">
+                <img class="cardimg" src="https://openhouse.bu.ac.th/contents/highlights/4.jpg?1">
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary rounded-0 btn-dark" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              อ่านเพิ่มเติม </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-auto">
+        <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg mb-4">
+          <div class="d-flex flex-column h-100">
+            <ul class="list-unstyled mb-0">
+              <li class="me-auto">
+                <img class="cardimg" src="https://openhouse.bu.ac.th/contents/highlights/5.jpg?1">
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary rounded-0 btn-dark" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              อ่านเพิ่มเติม </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- End Highlight Card -->
+
+  <!-- Start Footer -->
+  <div class="container-fluid bg-dark p-0 text-uppercase">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center p-5 text-light">
+      <div class="col-md-5 mb-3 mb-md-0">
+        <p class="fw-bold mb-1">9, 1 Phahonyothin Rd, Khlong Nueng, Khlong Luang, Pathum Thani 12120</p><br>
+        <p class="fw-bold mb-0">© 2024 by Bangkok University</p>
+      </div>
+      <ul class="nav col-md-5 justify-content-end">
+        <li class="nav-item">
+          <a href="https://www.facebook.com/bangkokuniversity" target="_blank"
+            class="nav-link px-2 text-light underline-effect">
+            <i class="fa-brands fa-facebook fa-xl me-2" style="color: #3b5998;"></i>Bangkok University
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.instagram.com/bangkok_bu/" target="_blank"
+            class="nav-link px-2 text-light underline-effect">
+            <i class="fa-brands fa-instagram fa-xl me-2" style="color: #E1306C;"></i>@bangkok_BU
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <!-- End Footer -->
+</body>
+
+</html>
