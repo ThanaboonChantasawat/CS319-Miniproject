@@ -24,11 +24,6 @@
       width: 100%;
     }
 
-    @media (min-width: 1440px) {
-      form {
-        width: 70%;
-      }
-    }
 
     .page-link:hover {
       color: orangered;
@@ -94,30 +89,36 @@
   <!-- Start Login From -->
   <div class="container d-flex flex-column text-black align-items-center justify-content-center"
     style="height: 90vh; width: 100%;">
-    <h1 class="display-1 fw-bold text-light text-center">BU OPEN HOUSE 2024</h1>
-    <form class="p-5 pb-2 pt-3 mt-5 rounded-4">
+    <h1 class="display-1 fw-bold text-light text-start">BU OPEN HOUSE 2024</h1>
+    <form class="p-5 pb-2 pt-3 rounded-4">
       <div class="container d-flex justify-content-center">
         <h1 class="display-3 fw-bold text-black text-center">Login</h1>
       </div>
-      <div class="mb-3">
-        <label for="loginemail" class="form-label h5  fw-bolder">E-mail<span class="text-danger  fw-bolder">
-            *</span></label>
-        <input type="email" class="form-control bg-transparent border-1 border-black " id="loginemail"
-          aria-describedby="emailHelp" required>
+      <!-- Email -->
+      <div class="mb-2 d-flex justify-content-between align-items-center">
+        <label for="loginemail" class="form-label h5 fw-bolder mb-0">
+          อีเมล<span class="text-danger fw-bolder"> *</span>
+        </label>
+        <a href="forgotemail.html" class="page-link fw-bolder">ลืมอีเมล</a>
       </div>
-      <div class="mb-3">
-        <label for="loginpassword" class="form-label h5  fw-bolder">รหัสผ่าน (เบอร์โทรศัพท์)<span
-            class="text-danger  fw-bolder"> *</span></label>
-        <input type="password" class="form-control bg-transparent border-1 border-black" id="loginpassword" required>
+      <input type="email" class="form-control bg-transparent border-1 border-black mb-2" id="loginemail"
+        aria-describedby="emailHelp" required>
+      <!-- Login -->
+      <div class="mb-2 d-flex justify-content-between align-items-center">
+        <label for="loginpassword" class="form-label h5 fw-bolder mb-0">
+          รหัสผ่าน (เบอร์โทรศัพท์)<span class="text-danger fw-bolder"> *</span>
+        </label>
+        <a href="forgotpassword.html" class="page-link fw-bolder">ลืมรหัสผ่าน</a>
       </div>
-      <div class="container d-flex justify-content-between">
+      <input type="password" class="form-control bg-transparent border-1 border-black mb-2" id="loginpassword" required>
+
+      <div class="container">
         <div class="form-check">
           <input class="form-check-input border-1 border-black" type="checkbox" value="" id="flexCheckDefault">
           <label class="form-check-label fw-bolder" for="flexCheckDefault">
             ให้ฉันอยู่ในระบบต่อไป
           </label>
         </div>
-        <a href="#" class="page-link fw-bolder">ลืมรหัสผ่าน</a>
       </div>
       <div class="container d-flex justify-content-center">
         <button type="submit" class="btn text-light rounded-4 btn-lg py-1"

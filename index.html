@@ -41,7 +41,7 @@
 
       <!-- ปุ่ม -->
       <div class="d-flex gap-2">
-        <button class="btn btn-outline-light btn-sm rounded-5 border-2 no-scale ">
+        <button class="btn btn-outline-light btn-sm rounded-5 border-2">
           <a href="login.html" class="nav-link">เข้าสู่ระบบ</a></button>
         <!-- <button class="btn btn-outline-light btn-sm rounded-5 border-2">English</button> -->
       </div>
@@ -107,7 +107,7 @@
   <!-- Start Heroes -->
   <section class="hero-section text-white bg-black">
     <div class="container text-center">
-      <h1 class="display-1 fw-bold shine">LET'S PLAY</h1>
+      <h2 class="display-1 fw-bold shine">LET'S PLAY</h2>
       <div class="d-flex flex-row align-items-center justify-content-center">
         <img class="heroesimg" src="https://openhouse.bu.ac.th/_nuxt/mascot_camera.BY9lPYQC.svg" height="100"
           class="mb-3 mb-md-0">
@@ -115,14 +115,17 @@
       </div>
       <div class="container-flip">
         <div class="flip">
-          <div><div>มาลองจนกว่าจะมั่นใจ</div></div>
-          <div><div>มาลองเล่นให้เป็นโปร</div></div>
-          <div><div>มาลองจนกว่าจะเจอ</div></div>
+          <div>
+            <div>มาลองจนกว่าจะมั่นใจ</div>
+          </div>
+          <div>
+            <div>มาลองเล่นให้เป็นโปร</div>
+          </div>
+          <div>
+            <div>มาลองจนกว่าจะเจอ</div>
+          </div>
         </div>
       </div>
-      
-      
-      
 
       <!-- Buttons -->
       <div class="d-flex flex-sm-row flex-column justify-content-center gap-3 mt-5" id="hightlight">
@@ -138,9 +141,9 @@
 
   <div class="container-fluid p-5 hightlight-color">
     <div class="container d-flex justify-content-center">
-      <h1 class="display-1 fw-bold mb-5 text-uppercase shimmer">Highlight</h1>
+      <h1 class="display-1 fw-bold mb-5 text-uppercase shimmer rounded-4">Highlight</h1>
     </div>
-    
+
     <div class="row justify-content-center">
 
       <!-- Card 1 -->
@@ -153,7 +156,7 @@
               </li>
             </ul>
             <button type="button" class="btn btn-primary rounded-0 btn-dark" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
+              data-bs-target="#myModal1">
               อ่านเพิ่มเติม </button>
           </div>
         </div>
@@ -169,7 +172,7 @@
               </li>
             </ul>
             <button type="button" class="btn btn-primary rounded-0 btn-dark" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
+              data-bs-target="#myModal2">
               อ่านเพิ่มเติม </button>
           </div>
         </div>
@@ -185,7 +188,7 @@
               </li>
             </ul>
             <button type="button" class="btn btn-primary rounded-0 btn-dark" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
+              data-bs-target="#myModal3">
               อ่านเพิ่มเติม </button>
           </div>
         </div>
@@ -201,7 +204,7 @@
               </li>
             </ul>
             <button type="button" class="btn btn-primary rounded-0 btn-dark" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
+              data-bs-target="#myModal4">
               อ่านเพิ่มเติม </button>
           </div>
         </div>
@@ -217,7 +220,7 @@
               </li>
             </ul>
             <button type="button" class="btn btn-primary rounded-0 btn-dark" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
+              data-bs-target="#myModal5">
               อ่านเพิ่มเติม </button>
           </div>
         </div>
@@ -233,7 +236,7 @@
               </li>
             </ul>
             <button type="button" class="btn btn-primary rounded-0 btn-dark" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
+              data-bs-target="#myModal6">
               อ่านเพิ่มเติม </button>
           </div>
         </div>
@@ -244,20 +247,175 @@
 
 
 
+
+
+
+
   <!-- Modal 1 -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  <div class="modal fade mymodal align-content-center" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-xl">
       <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body row text-start">
+          <div class="col-12 col-lg-6 d-flex justify-content-center position-relative">
+            <img class="rounded-4 img-fluid" src="img/card1.jpg" alt="White Hacker">
+            <div class="text-right cross position-absolute" style="top: 10px; right: 10px;">
+              <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="d-flex justify-content-between align-items-start mt-4">
+              <h1 class="display-5">White Hacker</h1>
+              <div class="text-right cross d-none d-lg-block">
+                <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+              </div>
+            </div>
+            <p class="h4">การเป็นแฮ็กเกอร์สายขาว</p>
+            <p class="lead mt-4">ใครที่สนใจเรื่องไอที เป็นคนชอบใส่ใจเรื่อง Bug อยากลองเป็นนักเจาะระบบ (ในทางที่ดี)
+              ที่เรียกว่า White Hat
+              Hacker ให้มาลองลงมือปฏิบัติของจริง และฝึกฝนทักษะที่จำเป็นสำหรับชาว White Hat Hero
+              โดยเฉพาะเรื่องการรักษาความปลอดภัยทางไซเบอร์</p>
+          </div>
         </div>
-        <div class="modal-body">
-          ...
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade mymodal align-content-center" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body row text-start">
+          <div class="col-12 col-lg-6 d-flex justify-content-center position-relative">
+            <img class="rounded-4 img-fluid" src="img/card2.jpg" alt="White Hacker">
+            <div class="text-right cross position-absolute" style="top: 10px; right: 10px;">
+              <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="d-flex justify-content-between align-items-start mt-4">
+              <h1 class="display-5">Unreal Engine</h1>
+              <div class="text-right cross d-none d-lg-block">
+                <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+              </div>
+            </div>
+            <p class="h4">การพัฒนาเกมด้วย Unreal Engine</p>
+            <p class="lead mt-4">ชวนน้องเกมเมอร์ตัวจริง ที่อยากไปได้ไกลกว่าแค่เป็นผู้เล่น แต่อยากเป็นผู้สร้าง
+              มาร่วมสัมผัสประสบการณ์ในการพัฒนาเกมของจริง ด้วยโปรแกรม Unreal Engine
+              พร้อมทั้งรับฟังคำแนะนำจากผู้เชี่ยวชาญในอุตสาหกรรมเกี่ยวกับเส้นทางอาชีพในสายงานด้านการพัฒนาเกม​โดยตรง</p>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade mymodal align-content-center" id="myModal3" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body row text-start">
+          <div class="col-12 col-lg-6 d-flex justify-content-center position-relative">
+            <img class="rounded-4 img-fluid" src="img/card3.jpg" alt="White Hacker">
+            <div class="text-right cross position-absolute" style="top: 10px; right: 10px;">
+              <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="d-flex justify-content-between align-items-start mt-4">
+              <h1 class="display-5">Virtual Reality</h1>
+              <div class="text-right cross d-none d-lg-block">
+                <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+              </div>
+            </div>
+            <p class="h4">การพัฒนาเกมบนโลกเสมือนจริง</p>
+            <p class="lead mt-4">ใครที่สนใจเกม VR เป็นพิเศษ ชอบที่ได้ออกท่าทางการเล่มเกมของจริง ชวนน้อง ๆ
+              มารับประสบการณ์ใหม่ ที่ไม่ใช่แค่เล่นเกม แต่คือการสร้างเกมเสมือนจริง มาปฏิบัตจริง
+              เรียนรู้พื้นฐานการใช้งานเครื่องมือสำหรับการพัฒนาเกมในโลกเสมือนจริง (Virtual Reality)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal fade mymodal align-content-center" id="myModal4" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body row text-start">
+          <div class="col-12 col-lg-6 d-flex justify-content-center position-relative">
+            <img class="rounded-4 img-fluid" src="img/card4.jpg" alt="White Hacker">
+            <div class="text-right cross position-absolute" style="top: 10px; right: 10px;">
+              <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="d-flex justify-content-between align-items-start mt-4">
+              <h1 class="display-5">Front End และ Back End</h1>
+              <div class="text-right cross d-none d-lg-block">
+                <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+              </div>
+            </div>
+            <p class="h4">เทคนิคการพัฒนาเว็บไซต์เต็มรูปแบบ</p>
+            <p class="lead mt-4">ชวนน้อง ๆ ที่สนใจเรื่องการเขียนโปรแกรม มาเข้าร่วมงานลงมือปฏิบัติจริง
+              ได้รับประสบการณ์ในการพัฒนาแอปพลิเคชันอย่างงายและรวดเร็ว ด้วย Oracle APEX</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="modal fade mymodal align-content-center" id="myModal5" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body row text-start">
+          <div class="col-12 col-lg-6 d-flex justify-content-center position-relative">
+            <img class="rounded-4 img-fluid" src="img/card5.jpg" alt="White Hacker">
+            <div class="text-right cross position-absolute" style="top: 10px; right: 10px;">
+              <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="d-flex justify-content-between align-items-start mt-4">
+              <h1 class="display-5">Business Analyst</h1>
+              <div class="text-right cross d-none d-lg-block">
+                <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+              </div>
+            </div>
+            <p class="h4">การใช้ปัญญาประดิษฐ์วิเคราะห์ธุรกิจ</p>
+            <p class="lead mt-4">ถ้าน้อง ๆ เป็นคนที่ชอบทั้งเรื่องเทคโนโลยี และสนใจเรื่องการต่อยอดในธุรกิจ
+              ทุกคนที่เข้าร่วมจะได้เรียนรู้เกี่ยวกับบทบาทและหน้าที่ของ Business Analyst เช่น การวิเคราะห์ข้อมูล
+              การระบุปัญหา และโอกาสในการปรับปรุงธุรกิจ พร้อมทั้งจัดทำรายงานได้ อัปความรู้ได้ทั้งเรื่องธุรกิจและ data</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="modal fade mymodal align-content-center" id="myModal6" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body row text-start">
+          <div class="col-12 col-lg-6 d-flex justify-content-center position-relative">
+            <img class="rounded-4 img-fluid" src="img/card6.jpg" alt="White Hacker">
+            <div class="text-right cross position-absolute" style="top: 10px; right: 10px;">
+              <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="d-flex justify-content-between align-items-start mt-4">
+              <h1 class="display-5">Visual Effects </h1>
+              <div class="text-right cross d-none d-lg-block">
+                <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+              </div>
+            </div>
+            <p class="h4">การสร้าง Visual Effects สำหรับเกม ด้วย Unreal Engine</p>
+            <p class="lead mt-4">ใครที่ติดใจกับ Special Effecfs ภายในเกม ไม่ว่าจะเบิด รถถัง ขี่กระบี่ ฟันดาบ
+              อยากมาลองสัมผัสการสร้างของจริง ต้องมาเข้าร่วม Workshop นี้ พาน้อง ๆ เรียนรู้กระบวนการสร้าง VFX
+              ตั้งแต่ขั้นพื้นฐานไปจนถึงการใช้งานเครื่องมือ Unreal Engine ในการสร้างเอฟเฟกต์ต่าง ๆ ภายในเกม เช่น แสงเงา
+              ระเบิด เพื่อเสริมสร้างอารมณ์และบรรยากาศของเกม โดยผู้เชี่ยวชาญจากภาคอุตสาหกรรมเกมตัวจริงเสียงจริง</p>
+          </div>
         </div>
       </div>
     </div>

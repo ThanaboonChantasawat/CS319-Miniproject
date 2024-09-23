@@ -26,14 +26,6 @@ body {
   top: 85px;
 }
 
-.no-scale {
-  transition: none;
-}
-
-.no-scale:hover {
-  transform: none;
-}
-
 .nav-link {
   color: white;
   font-weight: bold;
@@ -105,26 +97,54 @@ body {
 }
 
 .flip>div>div {
-  padding: 4px 12px;
-  height: 45px;
-  margin-bottom: 55px;
+  padding: 0;
+  height: auto;
+  margin-bottom: 50px;
   display: inline-block;
+  line-height: 1;
 }
 
 .flip div:first-child {
-  animation: show 8s linear infinite;
+  animation: show 11s linear infinite;
 }
 
+
 @keyframes show {
-  0% { margin-top: -270px; }  
-  15% { margin-top: -180px; }  
-  30% { margin-top: -180px; }  
-  45% { margin-top: -90px; }  
-  60% { margin-top: -90px; }  
-  75% { margin-top: 0px; }    
-  80% { margin-top: 0px; }     
-  99.99% { margin-top: 100px; }
-  100% { margin-top: 0px; }
+  0% {
+    margin-top: -380px;
+  }
+
+  15% {
+    margin-top: -250px;
+  }
+
+  30% {
+    margin-top: -250px;
+  }
+
+  45% {
+    margin-top: -130px;
+  }
+
+  60% {
+    margin-top: -130px;
+  }
+
+  75% {
+    margin-top: 0px;
+  }
+
+  80% {
+    margin-top: 0px;
+  }
+
+  90% {
+    margin-top: 70px;
+  }
+
+  100% {
+    margin-top: 100px;
+  }
 }
 
 .shine {
@@ -226,11 +246,59 @@ body {
 
 /* End Hightlight */
 
+/* Start Modal */
+.cross {
+  padding: 10px;
+  color: #11823b;
+  cursor: pointer
+}
+
+.mymodal {
+  .card {
+    height: auto;
+    width: auto;
+  }
+}
+
+/* End Modal */
+
 @media (max-width: 2560px) {
 
-  h1.display-1,
   h2.display-1 {
-    font-size: 7rem;
+    font-size: 9rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  form {
+    width: 70%;
+  }
+
+  h1.display-1 {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  h1.display-1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1.display-1 {
+    font-size: 5rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .cross.position-absolute {
+    display: none;
+  }
+
+  .cross.d-none.d-lg-block {
+    display: block;
   }
 }
 
@@ -257,6 +325,28 @@ body {
   .cardimg {
     width: 290px !important;
     height: 310px !important;
+  }
+
+  .modal-body {
+    padding: 1rem;
+  }
+
+  .h2 {
+    font-size: 1.5rem;  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .cross {
+    display: none; /* ซ่อนไอคอนในหน้าจอเล็ก */
+  }
+
+  .cross.position-absolute {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 }
 
@@ -293,19 +383,67 @@ body {
     font-size: 3rem !important;
   }
 
-  .container-flip {
-    font-size: 2rem;
-  }
-
-  .flip {
-    height: 50px;
-  }
-
   .shimmer {
     border: #004d25 5px solid;
     -webkit-text-stroke-color: #004d25;
     -webkit-text-stroke-width: 1px;
   }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .container-flip {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .flip {
+    height: 40px;
+  }
+
+  @keyframes show {
+    0% {
+      margin-top: -300px;
+    }
+
+    15% {
+      margin-top: -180px;
+    }
+
+    35% {
+      margin-top: -180px;
+    }
+
+    45% {
+      margin-top: -90px;
+    }
+
+    65% {
+      margin-top: -90px;
+    }
+
+    75% {
+      margin-top: 0px;
+    }
+
+    95% {
+      margin-top: 0px;
+    }
+
+    100% {
+      margin-top: 25px;
+    }
+  }
+
+}
+
+@media (max-width: 376px) {
+
+  label.h5 {
+    font-size: 0.9rem;
+  }
+
 }
 
 
@@ -345,7 +483,17 @@ body {
     font-size: small;
   }
 
-  #container-flip {
+  .container-flip {
     font-size: 1.5rem;
   }
+
+  h1.display-3 {
+    font-size: 1.8rem;
+  }
+
+  .btn-lg {
+    padding: 5px;
+  }
 }
+
+
