@@ -157,7 +157,7 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 500% auto;
-  animation: textShine 3s ease-in-out infinite alternate;
+  animation: textShine 8s ease-in-out infinite alternate;
 }
 
 @keyframes textShine {
@@ -270,6 +270,20 @@ body {
 
 /* End Google Maps */
 
+
+
+/* Start Form */
+
+form {
+  background-color: rgb(254, 248, 231);
+  width: 100%;
+}
+
+.page-link:hover {
+  color: orangered;
+}
+/* End Form */
+
 @media (max-width: 2560px) {
 
   h2.display-1 {
@@ -278,9 +292,6 @@ body {
 }
 
 @media (min-width: 1440px) {
-  form {
-    width: 70%;
-  }
 
   h1.display-1 {
     font-size: 5.5rem;
@@ -366,6 +377,7 @@ body {
   }
 }
 
+
 @media (max-width: 426px) {
 
   h1.display-1,
@@ -417,6 +429,10 @@ body {
   .flip {
     height: 40px;
   }
+
+
+
+  
 
   @keyframes show {
     0% {
@@ -517,13 +533,24 @@ body {
     font-size: 1.8rem;
   }
 
-  .btn-lg {
-    padding: 5px;
-  }
 
   .mymap{
     height: 200px;
     width: 210px;
+  }
+
+  form{
+    .page-link{
+      font-size: 12px;
+    }
+
+    label{
+      font-size: 12px;
+    }
+
+    .h5{
+      font-size: 12px;
+    }
   }
 
   @keyframes show {
