@@ -1,2 +1,2 @@
-# CS319 Miniproject
- cs319 mini project
+# CS319 Mini Project
+Thanaboon Chantasawat 1650706367
