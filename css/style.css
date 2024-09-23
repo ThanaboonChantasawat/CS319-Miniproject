@@ -262,6 +262,14 @@ body {
 
 /* End Modal */
 
+/* Start Google Maps */
+
+.mylocation{
+  background-color: #004d25;
+}
+
+/* End Google Maps */
+
 @media (max-width: 2560px) {
 
   h2.display-1 {
@@ -288,6 +296,10 @@ body {
 @media (max-width: 1024px) {
   h1.display-1 {
     font-size: 5rem;
+  }
+
+  .mymap{
+    width: 400px;
   }
 
 }
@@ -339,7 +351,7 @@ body {
   }
 
   .cross {
-    display: none; /* ซ่อนไอคอนในหน้าจอเล็ก */
+    display: none;
   }
 
   .cross.position-absolute {
@@ -347,6 +359,10 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
+  }
+
+  .mymap{
+    width: 300px;
   }
 }
 
@@ -436,12 +452,22 @@ body {
     }
   }
 
+  .mymap{
+    height: 200px;
+    width: 310px;
+  }
+
 }
 
 @media (max-width: 376px) {
 
   label.h5 {
     font-size: 0.9rem;
+  }
+
+  .mymap{
+    height: 200px;
+    width: 250px;
   }
 
 }
@@ -493,6 +519,45 @@ body {
 
   .btn-lg {
     padding: 5px;
+  }
+
+  .mymap{
+    height: 200px;
+    width: 210px;
+  }
+
+  @keyframes show {
+    0% {
+      margin-top: -300px;
+    }
+
+    15% {
+      margin-top: -150px;
+    }
+
+    35% {
+      margin-top: -150px;
+    }
+
+    45% {
+      margin-top: -70px;
+    }
+
+    65% {
+      margin-top: -70px;
+    }
+
+    75% {
+      margin-top: 10px;
+    }
+
+    95% {
+      margin-top: 10px;
+    }
+
+    100% {
+      margin-top: 25px;
+    }
   }
 }
 
