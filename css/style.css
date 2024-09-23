@@ -194,6 +194,28 @@ body {
   transform: scale(1.1);
 }
 
+.custom-btn {
+  transition: all 0.3s;
+}
+
+.custom-btn:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.custom-btn.bg-green:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.custom-btn.bg-orange:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.custom-btn.bg-pink:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+
+
 
 /* Start Hightlight */
 
@@ -264,7 +286,7 @@ body {
 
 /* Start Google Maps */
 
-.mylocation{
+.mylocation {
   background-color: #004d25;
 }
 
@@ -282,6 +304,7 @@ form {
 .page-link:hover {
   color: orangered;
 }
+
 /* End Form */
 
 @media (max-width: 2560px) {
@@ -309,7 +332,7 @@ form {
     font-size: 5rem;
   }
 
-  .mymap{
+  .mymap {
     width: 400px;
   }
 
@@ -355,7 +378,8 @@ form {
   }
 
   .h2 {
-    font-size: 1.5rem;  }
+    font-size: 1.5rem;
+  }
 
   .lead {
     font-size: 1rem;
@@ -372,8 +396,12 @@ form {
     right: 10px;
   }
 
-  .mymap{
+  .mymap {
     width: 300px;
+  }
+
+  .custom-btn {
+    font-size: medium !important;
   }
 }
 
@@ -432,7 +460,6 @@ form {
 
 
 
-  
 
   @keyframes show {
     0% {
@@ -468,7 +495,7 @@ form {
     }
   }
 
-  .mymap{
+  .mymap {
     height: 200px;
     width: 310px;
   }
@@ -481,7 +508,7 @@ form {
     font-size: 0.9rem;
   }
 
-  .mymap{
+  .mymap {
     height: 200px;
     width: 250px;
   }
@@ -534,21 +561,21 @@ form {
   }
 
 
-  .mymap{
+  .mymap {
     height: 200px;
     width: 210px;
   }
 
-  form{
-    .page-link{
+  form {
+    .page-link {
       font-size: 12px;
     }
 
-    label{
+    label {
       font-size: 12px;
     }
 
-    .h5{
+    .h5 {
       font-size: 12px;
     }
   }
@@ -589,3 +616,84 @@ form {
 }
 
 
+/* Start FAQ */
+.faq_area {
+  background-color: #91f086;
+}
+
+.accordion-button {
+  padding: 30px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  color: black;
+}
+
+.custom-btn {
+  font-size: x-large;
+  height: 80px;
+  color: white;
+}
+
+.custom-btn.bg-red:hover {
+  background-color: #ff4141;
+  color: white;
+}
+
+.custom-btn.bg-green:hover {
+  background-color: #48bf53;
+  color: white;
+}
+
+.custom-btn.bg-blue:hover {
+  background-color: #509ce4;
+  color: white;
+}
+
+.custom-btn.bg-orange:hover {
+  background-color: #eca226;
+  color: white;
+}
+
+.custom-btn.bg-gray:hover {
+  background-color: #808080;
+  color: white;
+}
+
+.custom-btn.bg-pink:hover {
+  background-color: #ff8196;
+  color: white;
+}
+
+/* End FAQ */
+
+
+.bg-red {
+  background-color: #ff4141;
+}
+
+.bg-green {
+  background-color: #48bf53;
+}
+
+.bg-blue {
+  background-color: #509ce4;
+}
+
+.bg-orange {
+  background-color: #eca226;
+}
+
+.bg-gray {
+  background-color: #808080;
+}
+
+.bg-pink {
+  background-color: #ff8196;
+}
