@@ -1,22 +1,251 @@
-body{
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
   overflow-x: hidden;
+  font-family: 'Roboto';
 }
 
+/* Navbar */
+
+.navbar-toggler {
+  border: none;
+
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn.nav-link {
+  font-weight: bold;
+}
+
+/* ทำให้ menubar อยู่ใต้ navbar พอดี เพราะใช้ sticky*/
+#menubar {
+  top: 85px;
+}
+
+.no-scale {
+  transition: none;
+}
+
+.no-scale:hover {
+  transform: none;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  font-size: larger;
+}
+
+/* start effect เส้นใต้ข้อความ */
+.underline-effect::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  visibility: hidden;
+  transition: 0.2s ease-in-out;
+}
+
+.underline-effect:hover::before {
+  width: 90%;
+  visibility: visible;
+}
+
+/* หน้าที่เลือก
+.underline-effect.selected::before{
+  width: 90%;
+  visibility: visible;
+} */
+
+/* end effect เส้นใต้ข้อความ */
+
+/* สี carousel-indicators*/
+.carousel .carousel-indicators button {
+  background-color: black;
+}
+
+.carousel .carousel-indicators button.active {
+  background-color: orange;
+}
+
+/* Font */
+
+/* Start Heroes */
+.hero-section {
+  padding: 100px 0;
+}
+
+
+.hero-section h2 {
+  color: rgb(195, 0, 0);
+}
+
+/* สลับข้อความ */
+.container-flip {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+  width: 100%;
+  display: block;
+  justify-content: center;
+}
+
+.flip {
+  height: 100px;
+  overflow: hidden;
+}
+
+.flip>div>div {
+  padding: 4px 12px;
+  height: 45px;
+  margin-bottom: 55px;
+  display: inline-block;
+}
+
+.flip div:first-child {
+  animation: show 8s linear infinite;
+}
+
+@keyframes show {
+  0% { margin-top: -270px; }  
+  15% { margin-top: -180px; }  
+  30% { margin-top: -180px; }  
+  45% { margin-top: -90px; }  
+  60% { margin-top: -90px; }  
+  75% { margin-top: 0px; }    
+  80% { margin-top: 0px; }     
+  99.99% { margin-top: 100px; }
+  100% { margin-top: 0px; }
+}
+
+.shine {
+  background: linear-gradient(to right,
+      #48bf53 20%,
+      #11823b 30%,
+      #11823b 70%,
+      #004d25 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 3s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+/* End Heroes */
+
+
+/* Card effect */
+
+.card {
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* effect btn */
+.btn {
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+
+/* Start Hightlight */
+
+.cardimg {
+  width: 350px;
+  height: 350px;
+}
+
+.btn-quiz {
+  border-color: #002fff;
+}
+
+.shimmer {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#48bf53), to(#48bf53), color-stop(0.5, #91f086));
+  background: gradient(linear, left top, right top, from(#48bf53), to(#48bf53), color-stop(0.5, #91f086));
+  -webkit-background-size: 400px;
+  background-size: 400px;
+  -webkit-background-clip: text;
+  background-clip: text bac;
+  -webkit-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #11823b;
+  border: #004d25 10px solid;
+  padding: 0 20px;
+  -webkit-text-stroke-color: #004d25;
+  -webkit-text-stroke-width: 3px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: top left -500px;
+  }
+
+  100% {
+    background-position: top right -500px;
+  }
+}
+
+.hightlight-color {
+  background-color: #91f086;
+}
+
+/* End Hightlight */
+
 @media (max-width: 2560px) {
-  h1.display-1, h2.display-1 {
+
+  h1.display-1,
+  h2.display-1 {
     font-size: 7rem;
   }
 }
 
 @media (max-width: 768px) {
-  h1.display-1, h2.display-1 {
+
+  h1.display-1,
+  h2.display-1 {
     font-size: 4rem;
   }
+
   h3.display-5 {
     font-size: 2.5rem;
   }
 
-  label.h5{
+  label.h5 {
     font-size: 1rem;
   }
 
@@ -26,27 +255,29 @@ body{
   }
 
   .cardimg {
-    width: 290px !important; 
+    width: 290px !important;
     height: 310px !important;
   }
 }
 
 @media (max-width: 426px) {
-  h1.display-1, h2.display-1 {
+
+  h1.display-1,
+  h2.display-1 {
     font-size: 2.5rem;
   }
 
   .card {
-    width: 290px !important;
+    width: 270px !important;
     height: 350px !important;
   }
 
   .cardimg {
-    width: 290px !important;
+    width: 270px !important;
     height: 310px !important;
   }
 
-  .heroesimg{
+  .heroesimg {
     width: 50px;
     height: 50px;
   }
@@ -60,15 +291,32 @@ body{
 
   .chevron {
     font-size: 3rem !important;
-  } 
-}
+  }
 
-@media (max-width: 320px) {
-  h1.display-1, h2.display-1 {
+  .container-flip {
     font-size: 2rem;
   }
 
-  p{
+  .flip {
+    height: 50px;
+  }
+
+  .shimmer {
+    border: #004d25 5px solid;
+    -webkit-text-stroke-color: #004d25;
+    -webkit-text-stroke-width: 1px;
+  }
+}
+
+
+@media (max-width: 320px) {
+
+  h1.display-1,
+  h2.display-1 {
+    font-size: 2rem;
+  }
+
+  p {
     font-size: 0.8rem;
   }
 
@@ -82,11 +330,11 @@ body{
     height: 250px !important;
   }
 
-  .col-auto{
+  .col-auto {
     padding: 0;
   }
 
-  .nav-link{
+  .nav-link {
     font-size: 0.8rem;
   }
 
@@ -96,116 +344,8 @@ body{
     width: 70%;
     font-size: small;
   }
+
+  #container-flip {
+    font-size: 1.5rem;
+  }
 }
-
-/* Navbar */
-
-.navbar-toggler{
-    border: none;
-
-}
-.navbar-toggler:focus{
-    box-shadow: none;
-    outline: none;
-}
-
-.btn.nav-link{
-    font-weight: bold;
-}
-
-/* ทำให้ menubar อยู่ใต้ navbar พอดี เพราะใช้ sticky*/
-#menubar {
-  top: 85px; 
-}
-
-.no-scale {
-  transition: none;
-}
-
-.no-scale:hover {
-  transform: none;
-}
-
-.nav-link{
-    color: white;
-    font-weight: bold;
-    position: relative;
-    font-size: larger;
-}
-
-/* start effect เส้นใต้ข้อความ */
-.underline-effect::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0%;
-    height: 2px;
-    background-color: white;
-    visibility: hidden;
-    transition: 0.2s ease-in-out;
-}
-
-.underline-effect:hover::before {
-    width: 90%;
-    visibility: visible;
-}
-
-/* หน้าที่เลือก
-.underline-effect.selected::before{
-  width: 90%;
-  visibility: visible;
-} */
-
-/* end effect เส้นใต้ข้อความ */
-
-/* สี carousel-indicators*/
-.carousel .carousel-indicators button {
-    background-color: black;
-}
-
-.carousel .carousel-indicators button.active {
-    background-color: orange;
-}
-
-/* Start Heroes */
-.hero-section{
-    padding: 100px 0;
-}
-
-.hero-section h1{
-    color: rgb(255, 246, 235);
- }
-
-.hero-section h2{
-   color: rgb(195, 0, 0);
-}
-
-.hero-section h3{
-   color: rgb(255, 246, 235);
-}
-
-  
-/* End Heroes */
-
-
-/* Card effect */
-
-.card {
-  transition: all 0.3s;
-}
-
-.card:hover{
-  transform: scale(1.1);
-}
-
-/* effect btn */
-.btn{
-  transition: all 0.5s;
-}
-
-.btn:hover{
-  transform: scale(1.1);
-}
-
