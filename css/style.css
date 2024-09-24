@@ -275,6 +275,12 @@ body {
   cursor: pointer
 }
 
+.faq-cross {
+  padding: 10px;
+  color: #11823b;
+  cursor: pointer
+}
+
 .mymodal {
   .card {
     height: auto;
@@ -283,6 +289,63 @@ body {
 }
 
 /* End Modal */
+
+/* Start FAQ */
+.faq_area {
+  background-color: #91f086;
+}
+
+.accordion-button {
+  padding: 30px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  color: black;
+}
+
+.custom-btn {
+  font-size: x-large;
+  height: 90px;
+  color: white;
+}
+
+.custom-btn.bg-red:hover {
+  background-color: #ff4141;
+  color: white;
+}
+
+.custom-btn.bg-green:hover {
+  background-color: #48bf53;
+  color: white;
+}
+
+.custom-btn.bg-blue:hover {
+  background-color: #509ce4;
+  color: white;
+}
+
+.custom-btn.bg-orange:hover {
+  background-color: #eca226;
+  color: white;
+}
+
+.custom-btn.bg-gray:hover {
+  background-color: #808080;
+  color: white;
+}
+
+.custom-btn.bg-pink:hover {
+  background-color: #ff8196;
+  color: white;
+}
+
+/* End FAQ */
 
 /* Start Google Maps */
 
@@ -334,6 +397,10 @@ form {
 
   .mymap {
     width: 400px;
+  }
+
+  .custom-btn {
+    font-size: large !important;
   }
 
 }
@@ -403,6 +470,18 @@ form {
   .custom-btn {
     font-size: medium !important;
   }
+
+  .faq-font h1.display-1 {
+    font-size: 15vw !important;
+  }
+
+  .faq-font p.h2 {
+    font-size: 4vw !important;
+  }
+
+  .faq-font h1.display-2 {
+    font-size: 7vw !important;
+  }
 }
 
 
@@ -411,6 +490,10 @@ form {
   h1.display-1,
   h2.display-1 {
     font-size: 2.5rem;
+  }
+  
+  h1.display-3{
+    font-size: 2rem;
   }
 
   .card {
@@ -426,13 +509,6 @@ form {
   .heroesimg {
     width: 50px;
     height: 50px;
-  }
-
-  .btn-custom {
-    align-self: center;
-    padding: 3px;
-    width: 70%;
-    font-size: medium;
   }
 
   .chevron {
@@ -544,12 +620,8 @@ form {
   .nav-link {
     font-size: 0.8rem;
   }
-
-  .btn-custom {
-    align-self: center;
-    padding: 3px;
-    width: 70%;
-    font-size: small;
+  .custom-btn {
+    font-size: small !important;
   }
 
   .container-flip {
@@ -615,63 +687,6 @@ form {
   }
 }
 
-
-/* Start FAQ */
-.faq_area {
-  background-color: #91f086;
-}
-
-.accordion-button {
-  padding: 30px;
-}
-
-.accordion-button:focus {
-  box-shadow: none;
-}
-
-
-.accordion-button:not(.collapsed) {
-  background-color: white;
-  color: black;
-}
-
-.custom-btn {
-  font-size: x-large;
-  height: 80px;
-  color: white;
-}
-
-.custom-btn.bg-red:hover {
-  background-color: #ff4141;
-  color: white;
-}
-
-.custom-btn.bg-green:hover {
-  background-color: #48bf53;
-  color: white;
-}
-
-.custom-btn.bg-blue:hover {
-  background-color: #509ce4;
-  color: white;
-}
-
-.custom-btn.bg-orange:hover {
-  background-color: #eca226;
-  color: white;
-}
-
-.custom-btn.bg-gray:hover {
-  background-color: #808080;
-  color: white;
-}
-
-.custom-btn.bg-pink:hover {
-  background-color: #ff8196;
-  color: white;
-}
-
-/* End FAQ */
 
 
 .bg-red {

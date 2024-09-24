@@ -60,13 +60,13 @@
             <a href="#hightlight" class="nav-link underline-effect">Highlight</a>
           </li>
           <li class="nav-item">
-            <a href="activies.html" class="nav-link underline-effect">Activities</a>
+            <a href="#FAQ" class="nav-link underline-effect">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Map" class="nav-link underline-effect">Map</a>
           </li>
           <li class="nav-item">
             <a href="about.html" class="nav-link underline-effect">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="faq.html" class="nav-link underline-effect">FAQ</a>
           </li>
         </ul>
       </div>
@@ -129,9 +129,9 @@
 
       <!-- Buttons -->
       <div class="d-flex flex-sm-row flex-column justify-content-center gap-3 mt-5" id="hightlight">
-        <button class="btn btn-outline-light btn-lg rounded-5 border-4 btn-custom">ปิดลงทะเบียน</button>
+        <button class="btn btn-outline-light btn-lg rounded-5 border-4">ปิดลงทะเบียน</button>
         <button
-          class="btn btn-quiz text-white btn-lg rounded-5 border-4 bg-primary btn-custom">เล่นเพื่อค้นหาความโปรในตัวคุณ</button>
+          class="btn btn-quiz text-white btn-lg rounded-5 border-4 bg-primary">เล่นเพื่อค้นหาความโปรในตัวคุณ</button>
       </div>
     </div>
   </section>
@@ -236,7 +236,7 @@
               </li>
             </ul>
             <button type="button" class="btn btn-primary rounded-0 btn-dark" data-bs-toggle="modal"
-              data-bs-target="#myModal6">
+              data-bs-target="#myModal6" id="FAQ">
               อ่านเพิ่มเติม </button>
           </div>
         </div>
@@ -426,56 +426,184 @@
   <!-- End Highlight Card -->
 
 
+  <!-- Start FAQ -->
 
   <div class="container-fluid p-5 faq-area" style="background-color: #91f086;">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-8 d-flex align-items-center">
-          <h1 class="m-0 me-4 display-1" style="font-size: 15vw;">FAQ</h1>
+        <div class="col-12 col-md-8 d-flex align-items-center faq-font">
+          <h1 class="m-0 me-4 display-1" style="font-size: 10vw;">FAQ</h1>
           <div class="align-content-center">
-            <p class="m-0 h2 fw-bolder" style="font-size: 4vw;">ใครมีคำถาม</p>
-            <h1 class="m-0 display-2 fw-bolder" style="font-size: 6vw;">มาค่า!</h1>
+            <p class="m-0 h2 fw-bolder" style="font-size: 3vw;">ใครมีคำถาม</p>
+            <h1 class="m-0 display-2 fw-bolder" style="font-size: 5vw;">มาค่า!</h1>
           </div>
         </div>
       </div>
       <div class="row mt-4 faq-btn">
         <div class="col-12 col-md-6 mb-3">
-          <button type="button" class="btn bg-red w-100 custom-btn border-0 rounded-5">
+          <button type="button" class="btn bg-red w-100 custom-btn border-0 rounded-5" data-bs-toggle="modal"
+            data-bs-target="#myFAQModal1">
             งาน BU Open House 2024 จัดขึ้นเมื่อไหร่และจัดที่ไหน?
           </button>
         </div>
         <div class="col-12 col-md-6 mb-3">
-          <button type="button" class="btn bg-green w-100 custom-btn border-0 rounded-5">
+          <button type="button" class="btn bg-green w-100 custom-btn border-0 rounded-5" data-bs-toggle="modal"
+            data-bs-target="#myFAQModal2">
             เข้าร่วมงานต้องลงทะเบียนไหม?
           </button>
         </div>
         <div class="col-12 col-md-6 mb-3">
-          <button type="button" class="btn bg-blue w-100 custom-btn border-0 rounded-5">
+          <button type="button" class="btn bg-blue w-100 custom-btn border-0 rounded-5" data-bs-toggle="modal"
+            data-bs-target="#myFAQModal3">
             เลือกลงทะเบียนเข้าร่วมกิจกรรมได้กี่คณะ?
           </button>
         </div>
         <div class="col-12 col-md-6 mb-3">
-          <button type="button" class="btn bg-orange w-100 custom-btn border-0 rounded-5">
+          <button type="button" class="btn bg-orange w-100 custom-btn border-0 rounded-5" data-bs-toggle="modal"
+            data-bs-target="#myFAQModal4">
             การแต่งกาย ใส่ชุดอะไรไปดี?
           </button>
         </div>
         <div class="col-12 col-md-6 mb-3">
-          <button type="button" class="btn bg-gray w-100 custom-btn border-0 rounded-5">
+          <button type="button" class="btn bg-gray w-100 custom-btn border-0 rounded-5" data-bs-toggle="modal"
+            data-bs-target="#myFAQModal5">
             กิจกรรมคณะต่าง ๆ เริ่มตั้งแต่กี่โมงและสิ้นสุดเมื่อไหร่?
           </button>
         </div>
         <div class="col-12 col-md-6 mb-3">
-          <button type="button" class="btn bg-pink w-100 custom-btn border-0 rounded-5">
+          <button type="button" class="btn bg-pink w-100 custom-btn border-0 rounded-5" data-bs-toggle="modal"
+            data-bs-target="#myFAQModal6" id="Map">
             ทุกคณะมีเปิดบ้านทุกวันไหม? และทั้ง 3 วันมีกิจกรรมเหมือนกันไหม?
           </button>
         </div>
       </div>
     </div>
-</div>
+  </div>
 
+  <!-- FAQ Modal 1 -->
+  <div class="modal fade mymodal align-content-center" id="myFAQModal1" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content rounded-5">
+        <div class="modal-body row text-start">
+          <div class="col-12 col-lg-12 ps-5 pe-5">
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <h1 class="display-6 fw-bold">งาน BU Open House 2024 จัดขึ้นเมื่อไหร่
+                และจัดที่ไหน?</h1>
+              <div class="text-start faq-cross">
+                <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+              </div>
+            </div>
+            <p class="lead mt-4">มารวมตัวพร้อมกันได้ในวันที่ 29-31 สิงหาคม 2567 ณ มหาวิทยาลัยกรุงเทพ Main campus
+              (รังสิต)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ Modal 2 -->
+  <div class="modal fade mymodal align-content-center" id="myFAQModal2" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content rounded-5">
+        <div class="modal-body row text-start">
+          <div class="col-12 col-lg-12 ps-5 pe-5">
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <h1 class="display-6 fw-bold">เข้าร่วมงานต้องลงทะเบียนไหม?</h1>
+              <div class="text-start faq-cross">
+                <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+              </div>
+            </div>
+            <p class="lead mt-4">สามารถลงทะเบียนเพื่อร่วมงาน BU OPEN HOUSE ล่วงหน้าได้ที่ <a href="registration.html"
+                class="link-dark">https://openhouse.bu.ac.th/register</a>หรือลงทะเบียนหน้างานได้ที่ PRO-CENTER
+              บริเวณใต้ตึก A3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ Modal 3 -->
+  <div class="modal fade mymodal align-content-center" id="myFAQModal3" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content rounded-5">
+        <div class="modal-body row text-start">
+          <div class="col-12 col-lg-12 ps-5 pe-5">
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <h1 class="display-6 fw-bold">เลือกลงทะเบียนเข้าร่วมกิจกรรมได้กี่คณะ?</h1>
+              <div class="text-start faq-cross">
+                <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+              </div>
+            </div>
+            <p class="lead mt-4">ลงทะเบียนครั้งเดียวสําหรับเข้าร่วมงาน BU OPEN HOUSE แล้วสามารถดูตาราง
+              กิจกรรมของคณะในคลัสเตอร์ต่าง ๆ ได้ที่หน้าเว็บไซต์หากสนใจกิจกรรมไหนก็ สามารถไปสแกน QR Code
+              เข้าร่วมที่หน้ากิจกรรมของแต่ละคณะ/สาขาได้เลย</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ Modal 4 -->
+  <div class="modal fade mymodal align-content-center" id="myFAQModal4" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content rounded-5">
+        <div class="modal-body row text-start">
+          <div class="col-12 col-lg-12 ps-5 pe-5">
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <h1 class="display-6 fw-bold">การแต่งกาย ใส่ชุดอะไรไปดี?</h1>
+              <div class="text-start faq-cross">
+                <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+              </div>
+            </div>
+            <p class="lead mt-4">มหาวิทยาลัยกรุงเทพเราเปิดรับความหลากหลาย ทุกคนสามารถแต่งกายได้ทั้งเครื่องแบบสถาบัน
+              หรือชุดฟรีสไตล์ของตัวเอง แต่ยังสุภาพเหมาะสมกับสถานศึกษาได้เลย</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ Modal 5 -->
+  <div class="modal fade mymodal align-content-center" id="myFAQModal5" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content rounded-5">
+        <div class="modal-body row text-start">
+          <div class="col-12 col-lg-12 ps-5 pe-5">
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <h1 class="display-6 fw-bold">กิจกรรมคณะต่าง ๆ เริ่มตั้งแต่กี่โมง
+                และสิ้นสุดเมื่อไหร่?</h1>
+              <div class="text-start faq-cross">
+                <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+              </div>
+            </div>
+            <p class="lead mt-4">สําหรับกิจกรรมทุกคณะ จะเริ่มตั้งแต่เวลา 9.00-16.30 น.
+              และมีต่อกับกิจกรรมสุดพิเศษช่วงเย็นสําหรับคอนเสิร์ตและโชว์วงดนตรีที่เวทีกลางบริเวณโถงอาคาร C6 หอสมุดสุรัตน์
+              โอสถานุเคราะห์ ตั้งแต่เวลา 17.00-20.00 น.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ Modal 6 -->
+  <div class="modal fade mymodal align-content-center" id="myFAQModal6" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content rounded-5">
+        <div class="modal-body row text-start">
+          <div class="col-12 col-lg-12 ps-5 pe-5">
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <h1 class="display-6 fw-bold">ทุกคณะมีเปิดบ้านทุกวันไหม? และทั้ง 3 วัน
+                มีกิจกรรมเหมือนกันไหม?</h1>
+              <div class="text-start faq-cross">
+                <i class="fa fa-times fa-2xl" data-bs-dismiss="modal"></i>
+              </div>
+            </div>
+            <p class="lead mt-4">ทุกคณะจะมีกิจกรรมเปิดบ้านให้เข้าร่วมทั้ง 3 วัน
+              สามารถเช็กตารางกิจกรรมได้ที่หน้าแรกตามแต่ละคลัสเตอร์ซึ่งบางคณะจะมีกิจกรรมไฮไลต์แต่ละวันไม่เหมือนกันอย่าลืมวางแผนเพื่อไม่ให้พลาดกิจกรรมที่ชอบนะคะ
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- End FAQ -->
 
-  
 
 
   <!-- Start Google Maps -->
