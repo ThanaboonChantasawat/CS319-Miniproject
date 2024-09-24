@@ -195,23 +195,23 @@ body {
 }
 
 .custom-btn {
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .custom-btn:hover {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1) rotate(2deg);
 }
 
 .custom-btn.bg-green:hover {
-  transform: scale(1.1) rotate(-5deg);
+  transform: scale(1.1) rotate(-2deg);
 }
 
 .custom-btn.bg-orange:hover {
-  transform: scale(1.1) rotate(-5deg);
+  transform: scale(1.1) rotate(-2deg);
 }
 
 .custom-btn.bg-pink:hover {
-  transform: scale(1.1) rotate(-5deg);
+  transform: scale(1.1) rotate(-2deg);
 }
 
 
@@ -277,7 +277,7 @@ body {
 
 .faq-cross {
   padding: 10px;
-  color: #11823b;
+  color: black;
   cursor: pointer
 }
 
@@ -291,6 +291,7 @@ body {
 /* End Modal */
 
 /* Start FAQ */
+
 .faq_area {
   background-color: #91f086;
 }
@@ -388,6 +389,18 @@ form {
   h1.display-1 {
     font-size: 5rem;
   }
+
+  .faq-font h1 {
+    font-size: 15vw !important;
+  }
+
+  .faq-font p.h2 {
+    font-size: 4vw !important;
+  }
+
+  .faq-font h1.display-2 {
+    font-size: 7vw !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -471,17 +484,7 @@ form {
     font-size: medium !important;
   }
 
-  .faq-font h1.display-1 {
-    font-size: 15vw !important;
-  }
-
-  .faq-font p.h2 {
-    font-size: 4vw !important;
-  }
-
-  .faq-font h1.display-2 {
-    font-size: 7vw !important;
-  }
+  
 }
 
 
@@ -534,8 +537,17 @@ form {
     height: 40px;
   }
 
+  .faq-font h1 {
+    font-size: 25vw !important;
+  }
 
+  .faq-font p.h2 {
+    font-size: 7vw !important;
+  }
 
+  .faq-font h1.display-2 {
+    font-size: 9vw !important;
+  }
 
   @keyframes show {
     0% {
@@ -712,3 +724,4 @@ form {
 .bg-pink {
   background-color: #ff8196;
 }
+
