@@ -426,6 +426,7 @@ form {
   .cross.d-none.d-lg-block {
     display: block;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -484,9 +485,22 @@ form {
     font-size: medium !important;
   }
 
-  
+  #menubar {
+    top: 86.9px;
+  }
 }
 
+@media (max-width: 767px) {
+  #menubar {
+      top: 106px;
+  }
+}
+
+@media (max-width: 595px) {
+  #menubar {
+      top: 88px;
+  }
+}
 
 @media (max-width: 426px) {
 
@@ -588,6 +602,9 @@ form {
     width: 310px;
   }
 
+  #menubar {
+    top: 89px;
+  }
 }
 
 @media (max-width: 376px) {
@@ -664,6 +681,10 @@ form {
     }
   }
 
+  #menubar {
+    top: 79px;
+  }
+
   @keyframes show {
     0% {
       margin-top: -300px;
@@ -724,4 +745,6 @@ form {
 .bg-pink {
   background-color: #ff8196;
 }
+
+
 
