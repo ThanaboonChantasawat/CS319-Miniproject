@@ -461,7 +461,7 @@ form {
     font-size: 1rem;
   }
 
-  .card {
+  .hightlight-card {
     width: 290px !important;
     height: 350px !important;
   }
@@ -494,17 +494,20 @@ form {
   #menubar {
     top: 86.9px;
   }
+  
 }
+
 
 @media (max-width: 767px) {
   #menubar {
-      top: 106px;
+    top: 106px;
   }
+  
 }
 
 @media (max-width: 595px) {
   #menubar {
-      top: 88px;
+    top: 88px;
   }
 }
 
@@ -514,12 +517,20 @@ form {
   h2.display-1 {
     font-size: 2.5rem;
   }
-  
-  h1.display-3{
+
+  h1.display-3 {
     font-size: 2rem;
   }
 
-  .card {
+  h1.display-6 {
+    font-size: 1.5rem;
+  }
+
+  h3.display-1 {
+    font-size: 3rem;
+  }
+
+  .hightlight-card {
     width: 270px !important;
     height: 350px !important;
   }
@@ -572,6 +583,7 @@ form {
   .faq-cross {
     right: 5%;
   }
+
 
   @keyframes show {
     0% {
@@ -642,7 +654,7 @@ form {
     font-size: 0.8rem;
   }
 
-  .card {
+  .hightlight-card {
     width: 250px !important;
     height: 290px !important;
   }
@@ -659,6 +671,7 @@ form {
   .nav-link {
     font-size: 0.8rem;
   }
+
   .custom-btn {
     font-size: small !important;
   }
@@ -690,6 +703,7 @@ form {
       font-size: 12px;
     }
   }
+
 
   #menubar {
     top: 79px;
@@ -755,6 +769,3 @@ form {
 .bg-pink {
   background-color: #ff8196;
 }
-
-
-
